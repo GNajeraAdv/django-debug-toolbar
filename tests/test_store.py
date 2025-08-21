@@ -26,6 +26,8 @@ class SerializationTestCase(TestCase):
             {"hello": {"foo": "bar"}},
         )
 
+    def test_serialize_2(self):
+        store.serialize({str: "this-is-a-string"})
 
 class BaseStoreTestCase(TestCase):
     def test_methods_are_not_implemented(self):
